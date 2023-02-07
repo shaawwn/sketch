@@ -1,0 +1,162 @@
+html, body, #root {
+    cursor: none;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+h1 {
+    margin: 0px;
+}
+
+:root {
+    --main-bg-color: rgb(50,50,70);
+    /* --canvas-bg-color: rgb(230,230,210); */
+    --canvas-bg-color: white;
+    --pallete-bg-color: rgba(150,150,150);
+    --main-banner-color: green;
+    --pixel-size: 20px;
+}
+
+.App {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+}
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.banner > h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 36px;
+}
+
+.sketch-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 5%;
+    /* padding-left: 10px; */
+    /* padding-right: 1000px; */
+}
+
+/* ---------------- CANVAS AND PALLETE ----------------- */
+
+.color-pallete {
+    background-color: var(--pallete-bg-color);
+    /* width: 200px; */
+    /* width: 20%; */
+    /* height: 50%; */
+    margin-top: 100px;
+    margin-bottom: auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.colors-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* margin: auto; */
+    justify-items: center;
+    /* background-color: black; */
+}
+
+.pallete-color {
+    width: 60px;
+    height: 60px;
+    /* background-color: white; */
+    margin: 5px;
+    box-shadow: inset 0 0 5px black;
+    border: 1px solid rgb(174, 173, 173);
+    /* z-index: 10; */
+}
+
+
+.canvas {
+    width: 800px;
+    height: 800px;
+    /* width: 70%; */
+    background-color: var(--canvas-bg-color);
+    /* margin-top: 50px; */
+
+    /* margin-right: 20px; */
+    /* margin-bottom: 150px; */
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0px;
+    /* padding-bottom: 0px; */
+}
+
+
+.pixel {
+    width: var(--pixel-size);
+    height:var(--pixel-size);
+    /* margin: 0px; */
+}
+
+.brush {
+    /* cursor: none; */
+    pointer-events: none;
+    position: absolute;
+    width: var(--pixel-size);
+    height:var(--pixel-size);
+    /* background-color: yellow; */
+    top: 0px;
+    
+    border: 1px solid black;
+    border-radius:10px;
+    /* z-index: -1; */
+}
+
+.fa-brush-icon {
+    position: relative;
+    bottom: 20px;
+}
+/*-------------------- COLORS ---------------------------- */
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
+
